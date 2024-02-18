@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Coffee-1</title>
+	<link rel="stylesheet" href="coffee2.css">
+	<script src="coffee2.js" defer></script>
+</head>
+<body>
+	<h1 class="coffee__title">Виды кофе</h1>
+	<div class="container">
+		<form class="coffee__form">
+			<div class="coffee__form_type">
+				<input id="espresso" type="radio" name="coffee" value="Espresso">
+				<label for="Espresso">Espresso</label>
+			</div>
+			<div class="coffee__form_type">
+				<input id="doppio" type="radio" name="coffee" value="Doppio">
+				<label for="Doppio">Doppio</label>
+			</div>
+			<div class="coffee__form_type">
+				<input id="tripplo" type="radio" name="coffee" value="Tripplo">
+				<label for="Tripplo">Tripplo</label>
+			</div>
+			
+			<div class="coffee__form_type">
+				<input id="americano" type="radio" name="coffee" value="Americano">
+				<label for="Americano">Americano</label>
+			</div>
+			<div class="coffee__form_type">
+				<input id="capuccino" type="radio" name="coffee" value="Capuccino">
+				<label for="Capuccino">Capuccino</label>
+			</div>
+			<div class="coffee__form_type">
+				<input id="latte" type="radio" name="coffee" value="Latte">
+				<label for="Latte">Latte</label>
+			</div>
+			<div class="coffee__form_type">
+				<input id="ristretto" type="radio" name="coffee" value="Ristretto">
+				<label for="Ristretto">Ristretto</label>
+			</div>
+			<div class="coffee__form_type">
+				<input id="lungo" type="radio" name="coffee" value="Lungo">
+				<label for="Lungo">Lungo</label>
+			</div>
+			
+			<input id="button" type="submit" value="Выбрать">
+		</form>
+		
+		
+		<div class="cup__plate">
+			<div class="cup">
+				<div class="coffee__cup_type espresso">
+					<div class="espresso__coffee">Эспрессо 30 мл</div>
+				</div>
+				<div class="coffee__cup_type doppio">
+					<div class="doppio__coffee">Эспрессо 60 мл</div>
+				</div>
+				<div class="coffee__cup_type tripplo">
+					<div class="tripplo__coffee">Эспрессо 90 мл</div>
+				</div>
+				
+				<div class="coffee__cup_type americano">
+					<div class="americano__water">Вода</div>
+					<div class="americano__coffee">Эспрессо 30 мл</div>
+				</div>
+				<div class="coffee__cup_type capuccino">
+					<div class="capuccino__frothed-milk">Взбитое молоко</div>
+					<div class="capuccino__milk">Молоко</div>
+					<div class="capuccino__coffee">Эспрессо 30 мл</div>
+				</div>
+				<div class="coffee__cup_type latte">
+					<div class="latte__frothed-milk">Взбитое молоко</div>
+					<div class="latte__milk">Молоко</div>
+					<div class="latte__coffee">Эспрессо 30 мл</div>
+				</div>
+				<div class="coffee__cup_type ristretto">
+					<div class="ristretto__nul">Двойная доза кофеина</div>
+					<div class="ristretto__coffee">Ристрето</div>
+				</div>
+				<div class="coffee__cup_type lungo">
+					<div class="lungo__nul">Пониженная доза кофеина</div>
+					<div class="lungo__coffee">Лунго</div>
+				</div>
+			</div>
+			
+			<div class="cup__handle-1"></div>
+			<div class="cup__handle-2"></div>
+			<div class="plate"></div>
+		</div>
+	</div>
+	
+	<h2>Описание</h2>
+	<div class="container">
+		<p class="description"></p>
+	</div>
+</body>
+</html>

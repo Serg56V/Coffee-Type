@@ -1,0 +1,154 @@
+body {
+	font-family: Arial, sans-serif;
+	color: brown;
+	--bg-cup: #ebddbc;
+}
+h1, h2 { 
+	text-align: center;
+}
+#button {
+	margin-top: 20px;
+}
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.cup__plate {
+	position: relative;
+}
+.cup {
+	width: 200px;
+	height: 150px;
+	background: var(--bg-cup);
+	border-radius: 0px 0px 40px 40px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 2.5;
+	color: white;
+	z-index:3;
+}
+.cup__handle-1 {
+	position: absolute;
+	top: 20px;
+	right: -40px;
+	width: 100px;
+	height: 100px;
+	background: var(--bg-cup);
+	border-radius: 100%;
+	z-index:-2;
+}
+.cup__handle-2 {
+	position: absolute;
+	top: 40px;
+	right: -30px;
+	width: 80px;
+	height: 60px;
+	background: white;
+	border-radius: 100%;
+	z-index:-1;
+}
+.plate {
+	width: 200px;
+	height: 10px;
+	border-radius: 10px;
+	background: var(--bg-cup);
+}
+.description {
+	margin: 0 50px;
+}
+.espresso, 
+.doppio, 
+.tripplo,
+.americano, 
+.capuccino, 
+.latte,
+.ristretto,
+.lungo {
+	display: none;
+	position: relative;
+	height: 145px;
+	margin-left: 5px;
+}
+.espresso__coffee, 
+.doppio__coffee, 
+.tripplo__coffee,
+.americano__coffee, 
+.capuccino__coffee, 
+.latte__coffee,
+.ristretto__coffee,
+.lungo__coffee {
+	position: absolute;
+	bottom: 0;
+	width: 190px;
+	height: 40px;
+	background: brown;
+	border-radius: 0px 0px 40px 40px;
+}
+.doppio__coffee {
+	height: 70px;
+}
+.tripplo__coffee {
+	height: 90px;
+}
+.americano__water {
+	position: absolute;
+	top: 5px;
+	width: 190px;
+	height: 100px;
+	background: #a7e8fc;
+	color: blue;
+}
+.capuccino__frothed-milk {
+	position: absolute;
+	//bottom: 80px;
+	top: 5px;
+	width: 190px;
+	height: 60px;
+	background: #e8fbfc;
+	color: blue;
+}
+.capuccino__milk {
+	position: absolute;
+	bottom: 40px;
+	width: 190px;
+	height: 40px;
+	background: #fff;
+	color: blue;
+}
+.latte__frothed-milk {
+	position: absolute;
+	top: 5px;
+	width: 190px;
+	height: 40px;
+	background: #e8fbfc;
+	color: blue;
+}
+.latte__milk {
+	position: absolute;
+	bottom: 40px;
+	width: 190px;
+	height: 60px;
+	background: white;
+	color: blue;
+}
+.ristretto__coffee {
+	height: 30px;
+	line-height: 2;
+	border-radius: 0px 0px 45px 45px / 0px 0px 30px 30px;
+}
+.ristretto__nul {
+	color: brown;
+	line-height: 7;	
+}
+.lungo__coffee {
+	height: 50px;
+}
+.lungo__nul {
+	color: brown;
+	line-height: 3;
+}
+.active {
+	display: block;
+}
